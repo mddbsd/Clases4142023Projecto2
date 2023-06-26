@@ -56,3 +56,14 @@ public class Operaciones {
         return Integer.parseInt(System.console().readLine());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
