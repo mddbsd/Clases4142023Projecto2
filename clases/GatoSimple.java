@@ -12,8 +12,28 @@ public class GatoSimple {
         this.genero = s;
     }
 
+    public GatoSimple (String s, double p, String c){
+        this.genero = s;
+        this.peso = p;
+        this.color = c;
+    }
+
+    // METODOS ////////////////////
+    // GETTERS ////////////////////
     public String getGenero(){
         return this.genero;
+    }
+
+    public String getColor(){
+        return this.color;
+    }
+
+    public double getPeso(){
+        return this.peso;
+    }
+    // SETTERS ////////////////////
+    public void setNombre(String n){
+        this.nombre = n;
     }
 
     public void maulla(){
