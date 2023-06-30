@@ -6,6 +6,8 @@ public class PruebaAlumnos {
         Alumno a1 = new Alumno();
         Alumno a2 = new Alumno();
         Alumno a3 = new Alumno();
+        int[] notas = new int[3];
+        
         // Carga los datos de los alumnos
         System.out.print("Ingrese nombre del alumno 1: ");
         a1.setNombre(s.nextLine());
@@ -13,8 +15,19 @@ public class PruebaAlumnos {
         a1.setApellido(s.nextLine());
         System.out.print("Ingrese edad del alumno 1: ");
         a1.setEdad(Integer.parseInt(s.nextLine()));
+        for (int i = 0; i < 3; i ++){
+            System.out.println("Ingrese nota" + (i + 1) + ": ");
+            notas[i] = Integer.parseInt(s.nextLine());
+        }
+        a1.setNotas(notas);
         
-        System.out.print("Ingrese nombre del alumno 2: ");
+        System.out.printf("Nombre: %s\nApellido: %s\nEdad: %d\n",a1.getNombre(),a1.getApellido(),a1.getEdad());
+        for (int i = 0; i < 3; i ++){
+            System.out.println("Nota" + (i + 1) + ": " + a1.getNotas()[i]);
+        }
+        
+        
+       /*System.out.print("Ingrese nombre del alumno 2: ");
         a2.setNombre(s.nextLine());
         System.out.print("Ingrese apellido del alumno 2: ");
         a2.setApellido(s.nextLine());
@@ -27,12 +40,12 @@ public class PruebaAlumnos {
         a3.setApellido(s.nextLine());
         System.out.print("Ingrese edad del alumno 3: ");
         a3.setEdad(Integer.parseInt(s.nextLine()));
-
+        
         System.out.println();
         // Muestra los datos delos alumnos
         System.out.printf("Nombre: %s\nApellido: %s\nEdad: %d\n",a1.getNombre(),a1.getApellido(),a1.getEdad());
         System.out.printf("Nombre: %s\nApellido: %s\nEdad: %d\n",a2.getNombre(),a2.getApellido(),a2.getEdad());
         System.out.printf("Nombre: %s\nApellido: %s\nEdad: %d\n",a3.getNombre(),a3.getApellido(),a3.getEdad());
-
+        */
     }
 }

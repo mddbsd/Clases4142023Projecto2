@@ -62,6 +62,7 @@ public class Alumno {
     public int[] getNotas(){
         return this.notas;
     }
+
 }
 
 
