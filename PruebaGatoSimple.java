@@ -22,8 +22,9 @@ public class PruebaGatoSimple {
         nombre = s.nextLine();
         tom.setNombre(nombre);
 
-
-
+        garfield.maulla();
+        lisa.maulla();
+        tom.ronronea();
 
         System.out.println("El genero del garfield es: " + garfield.getGenero());
         System.out.println("El genero del lisa es: " + lisa.getGenero());
