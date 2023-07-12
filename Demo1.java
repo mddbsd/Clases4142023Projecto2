@@ -12,7 +12,8 @@ public class Demo1 {
             System.out.println("Menu:");
             System.out.println("1: Listar personajes");
             System.out.println("2: Cargar personajes");
-            System.out.println("3: Salir");
+            System.out.println("3: Saludar a personaje");
+            System.out.println("4: Salir");
             switch(Integer.parseInt(s.nextLine())){
                 case 1:
                     for (int i = 0; i < 3; i ++){
@@ -40,6 +41,22 @@ public class Demo1 {
                     }
                     break;
                 case 3:
+                    System.out.println("A que personaje quiere saludar?");
+                    switch(Integer.parseInt(s.nextLine())){
+                        case 1:
+                            pj[0].saluda();
+                            break;
+                        case 2:
+                            pj[1].saluda();
+                            break;
+                        case 3:
+                            pj[2].saluda();
+                            break;
+                        default:
+                            System.out.println("El personaje no existe");
+                    }
+                    break;
+                case 4:
                     flag = false;
                     break;
                 default:

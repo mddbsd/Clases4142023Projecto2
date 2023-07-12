@@ -65,6 +65,15 @@ public class Personaje {
         return this.clase;
     }
 
+    public void saluda(){
+        if(this.clase.equals("guerrero")){
+            System.out.println("Soy el guerrero " + this.nombre);
+        }else if (this.clase.equals("mago")){
+            System.out.println("Soy el mago " + this.nombre);
+        }
+        
+    }
+
 }
 
 
