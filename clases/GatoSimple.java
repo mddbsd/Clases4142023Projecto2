@@ -12,6 +12,11 @@ public class GatoSimple {
         this.genero = s;
     }
 
+    public GatoSimple (String n, String c){
+        this.nombre = n;
+        this.color = c;
+    }
+
     public GatoSimple (String s, double p, String c){
         this.genero = s;
         this.peso = p;
@@ -30,6 +35,10 @@ public class GatoSimple {
 
     public double getPeso(){
         return this.peso;
+    }
+
+    public String getNombre(){
+        return this.nombre;
     }
     // SETTERS ////////////////////
     public void setNombre(String n){
