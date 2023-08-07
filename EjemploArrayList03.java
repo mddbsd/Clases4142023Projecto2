@@ -14,6 +14,7 @@ public class EjemploArrayList03 {
         for(GatoSimple gatoAux : g){
             System.out.println("Nombre: " + gatoAux.getNombre());
             System.out.println("Colore: " + gatoAux.getColor());
+            System.out.println("genero: " + gatoAux.getGenero());
         }
     }
 }
